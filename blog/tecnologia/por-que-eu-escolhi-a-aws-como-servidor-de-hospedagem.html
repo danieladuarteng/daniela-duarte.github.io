@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Por que eu escolhi a AWS como servidor de hospedagem? | Daniela Duarte - Desenvolvedora Front-End</title>
+	
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width"/>
+	
+	<meta content="7 dicas para conseguir trabalho em tecnologia."
+	name="description"/>
+	
+	<link rel="stylesheet" href="../../css/style.css"/>
+	<link rel="shortcut icon" href="../../imagens/favoricon.png"/>
+	
+	<!-- CSS mainchimp-->
+	<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+	<style>
+					#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+					/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+					   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+	</style>
+
+</head>
+
+<body>
+
+	<nav>
+		<div id="pagina">
+			<div class="barra-menu">
+				<div class="btn-menu alinhamento">
+					
+					<a href="../../" >
+						<img src="../../imagens/logotipo.png" alt="logomarca" title="logomarca"/>
+					</a>
+					
+					<a href="#" id="btn-drop" >
+						<input type="checkbox" id="menu-simbolo">
+						<label for="menu-simbolo">&#9776;</label>
+					</a>
+					
+				</div>		
+					<ul id="submenu" class="lista-menu alinhamento">
+						<li><a href="../../">Início</a></li>
+						<li><a href="../../servicos">Serviços</a></li>
+						<li><a href="../../sobre-mim">Sobre mim</a></li>
+						<li><a href="../">Blog</a></li>
+						<li><a href="../../fale-comigo">Fale comigo</a></li>
+					</ul>
+			</div>
+			</div>
+		</div>
+	</nav>
+	
+	
+	<div class="foto-blog">
+		<img src="../../imagens/aws.jpg" 
+							alt="logo aws"/>
+			<div class="legenda-capa">
+				<a href="data:image/png;base64,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"
+				target="_blank">
+						Imagem: logo AWS adaptado
+				</a>
+			</div>					
+	</div>
+									
+	<h1>Por que eu escolhi a AWS como servidor de hospedagem?</h1>
+	
+	<div class="estrutura-blog">
+		<div class="conteudo-blog">
+			<div class="cabecalho">
+				<div class="box-1"><a href="../tecnologia/">TECNOLOGIA</a></div>
+				<div class="box-2"><a href="../../sobre-mim">Daniela Duarte</a></div>
+				<div class="box-3">22 de maio de 2018</div>
+			</div>
+			
+				<p>
+					Para quem não sabe:
+				</p>
+				
+				<p>
+				<strong>
+				<em>
+				Servidor de hospedagem: é a casa on-line dos sites e aplicações que estão disponíveis na internet.
+				</em>
+				</strong>
+				</p>
+				<br><br>
+				
+				<p>
+				Eu poderia ter escolhido servidores mais fáceis, de só arrastar e soltar, já que meu objetivo 
+				era só colocar meu site no ar.
+				</p>
+				
+			
+				<p>
+				Mas eu não gosto de coisas fáceis, gosto de complicar rsrs
+				</p>
+				
+
+				<p>
+				Tenho como formação engenharia da computação, e eu sempre amei muito tecnologia 
+				então eu já fiz curso de tudo quanto é coisa da área, porque eu não gosto de depender 
+				de ninguém pra arrumar meu computador quando der falha, nem de técnico para arrumar o 
+				roteador e a internet.
+				</p>
+				
+				<p>
+				Como já contei antes, no dia que soube que seria demitida, eu falei em todas minhas 
+				redes sociais que contando daquele dia, em 30 dias eu teria novidades, e a novidade 
+				seria me lançar como 
+				<a href="http://danieladuarte.com.br/servicos"
+						target="_blank">
+				desenvolvedora web freelancer,
+				</a>
+				porém para fazer isso eu teria 
+				que ter meu próprio site e então me desafiei a desenvolver 
+				<a href="http://danieladuarte.com.br/"
+						target="_blank">
+				meu site do zero
+				</a>
+				e colocá-lo 
+				no ar, mesmo nunca tendo feito um site sozinha e muito menos colocado no ar, e detalhe 
+				tive que parar meu TCC, onde faltava 2 meses para entregar haha loucura total
+				</p>
+				
+				
+				<p>
+				O legal foi que tinha tido uma computação em nuvem na facul, onde o professor passou 
+				nomes de diversos serviços de hospedagens e cada grupo teve que apresentar um. 
+				Eu escolhi a 
+				<a href="https://aws.amazon.com/pt/"
+						target="_blank">
+				AWS
+				</a>
+				por puro a caso para meu grupo, e nas apresentações dos meus colegas, 
+				vi que tinha escolhido uma das melhores.
+				</p>
+				<br>
+				<p></p>
+				<p><em>
+				Atenção! Não espere que esse artigo tenha detalhes técnicos, estarei contando 
+				somente minha experiência com a AWS 
+				</em></p>
+				<p></p>
+
+				<br>
+				<h2>
+				Primeiro o que é a AWS?
+				</h2>
+				
+				<p>
+				Amazon Web Service: oferece serviços de hospedagem de sites, aplicações empresariais,
+				armazenamento de dados, backup, etc ,ou seja, toda a infraestrutura que você tem na
+				sua empresa na nuvem (internet).
+				</p>
+				
+				<h2>
+				Disponibilidade
+				</h2>
+				
+				<p>
+				O que seria disponibilidade? É o ato de estar disponível, 
+				<a href="https://aws.amazon.com/pt/"
+						target="_blank">
+				ela possui 55 zonas de disponibilidade em 18 regiões geográficas e uma região 
+				local em todo mundo, 
+				</a>
+				ou seja, em praticamente todo o mundo tem um ponto da AWS, 
+				assim ela garante que seu site, sua aplicação esteja 99,9% disponível, se um ponto 
+				fica indisponível outro ponto pode segurar sua aplicação, então é bem confiável.
+				</p>
+				
+				<h2>
+				Preço
+				</h2>
+				<p>
+				Acho que é a principal vantagem que me fez escolher a AWS, você paga somente 
+				o que consome além de ter 12 meses de plano gratuito para testar, sim é um plano 
+				básico, porém para mim valeu e vale muito a pena, e quando eu precisar de um plano
+				mais completo é muito fácil trocar.
+				</p>
+				
+				<p>
+				Eu falei, nossa que legal não vou pagar durante 1 ano, porém eu fiz a merda de 
+				contratar o plano de desenvolvedor, porque falei sou desenvolvedora quero mais funcionalidades.
+				</p>
+				
+				<p>
+				Então meu primeiro mês veio uma conta meio que assustadora, porque os 12 meses só 
+				estão inclusos no plano básico.
+				</p>
+				
+				<p>
+				Vi que não precisava do plano de desenvolvedor e voltei ao básico, porém perdi a 
+				chance de conseguir os 12 meses gratuitos porque havia contratado o plano pago 
+				primeiro. Não fazia ideia do que ia pagar no mês seguinte, para minha surpresa 
+				a conta veio com o valor 3 vezes menor.
+				</p>
+				
+				<p>
+				O valor estava parecido com os serviços de hospedagens do Brasil, foi então que 
+				vi que tinha colocado arquivos a mais nas pastas do servidor, então organizei meus 
+				arquivos e no mês seguinte paguei 50% a menos que o mês anterior ;D
+				</p>
+				
+				<p>
+				E até hoje pago um valor muito baixo e esse é o principal motivo de eu continuar 
+				com a AWS e não querer mudar de jeito nenhum.
+				</p>
+				
+				<h2>
+				Tutoriais
+				</h2>
+				
+				<p>
+				Existem muitos tutoriais em português, que vão te ajudar a fazer o básico.
+				</p>			
+				
+				<h2>
+				Inglês
+				</h2>
+				
+				<p>
+				Pensei que só os tutoriais iriam me ajudar, porém tive que ler muita documentação 
+				e falar com o atendimento, ambos em inglês.
+				</p>
+				
+				<p>
+				No começo falei: ok, assim você melhora seu inglês, posso te dizer que quando comecei 
+				a configurar meu site eu quis me matar por ter feito essa escolha terrível, eu falei 
+				menina você é louca? Você podia ter escolhido um serviço brasileiro, seria muito mais 
+				fácil para tirar as dúvidas e configurar tudo.
+				</p>
+				
+				
+				<p>
+				Mas depois de muito estudo nas documentações, tirando dúvidas no chat eu finalmente 
+				aprendi a configurar o servidor tanto no S3 que é para sites estáticos, quanto no EC2 que uso, 
+				pois meu site consome PHP para vocês me enviarem e-mail pelo formulário do fale comigo.
+				</p>
+				
+				<p>
+				E foi uma experiência muito bacana, apesar de ter chorado algumas vezes, eu me forcei 
+				a melhorar o inglês e a configurar servidores, e hoje vejo que foi uma ótima opção, 
+				meu nível de leitura aumentou e minha força de vontade e dedicação para fazer as 
+				coisas acontecerem só cresceram.
+				</p>
+				
+				<h2>
+				Vagas de Front-End
+				</h2>
+				
+				<p>
+				Hoje eu vejo algumas vagas de Front-End, pedindo ou vendo como diferencial saber 
+				mexer no servidor da AWS e fico muito orgulhosa de já ter essa habilidade, mas só 
+				algumas vagas pedem, não é uma coisa obrigatória para um Eront-End.
+				</p>
+				<br>
+				<p></p>
+				
+				<p>
+				Não sou especialista em servidores e nem é meu foco, mas para mim foi um grande aprendizado, 
+				pois para um desenvolvedor poder ter controle total das suas aplicações além do código, 
+				não sei para você, mas para mim é muito gratificante, cada dia mais posso deixar meus sites melhores.
+				</p>
+				
+				<p>
+				E hoje na segunda versão do meu site já sei mais truques para otimizar o consumo do site e outros detalhes, 
+				<a href="http://danieladuarte.com.br/blog/tecnologia/htaccess-como-fazer-urls-amigaveis-sem-ponto-html-no-amazon-ec2"
+						target="_blank">
+				como tirar o .HTML das URLs como expliquei nesse artigo
+				</a>
+				</p>
+				
+				<p>...</p>
+				<p>
+				E é isso, e você já usou os servidores da AWS? Gosta deles? 
+				Tem mais dicas do porque usar ele? Conhece outros servidores bacanas?
+				</p>
+				<p>
+				Me fala nos comentários ;)
+				</p>
+
+
+				<div id="compartilhe">
+				<h1><strong>Compartilhe</strong></h1>
+				<!-- Go to www.addthis.com/dashboard to customize your tools -->
+				<div class="addthis_inline_share_toolbox"></div>
+				</div>
+				
+				<div class="newsletter-post">
+						<div class="formulario">
+							<form action="https://danieladuarte.us17.list-manage.com/subscribe/post?u=99d5a979cddef03e25e111bb4&amp;id=b9fbd70afe" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+								
+								<h1>Gostou do post?</h1>
+								<label for="mce-EMAIL"><p>Cadastre-se para receber gratuitamente novidades e publicações do blog por e-mail</p></label>
+								<input type="email" value="" name="EMAIL" placeholder="Coloque seu melhor e-mail" required>
+								<input type="submit" value="CADASTRAR" name="subscribe" class="botaoEnviar-post">
+								
+							</form>
+						</div>
+				</div>
+				
+				<div id="autor">
+					<h1><strong>Publicado por:</strong></h1>
+					<div class="grid-autor">
+						<div class="grid-autor-item">
+						<img class="thumbnail-autor" src="../../imagens/daniela-duarte.png"
+						alt="Daniela Duarte de blusa rosa"/>
+					</div>
+					<div class="grid-autor-item-ultimo">
+						<h1><a href="../../sobre-mim">Daniela Duarte</a></h1>
+							<p>Desenvolvedora Front-End, engenheira da computação e técnica em informática por formação,
+							apaixonada por tecnologia e design desde que se conhece por gente, cria sites, produz conteúdo,
+							ama programar, desenhar, comer, chocolates, beber, ouvir música, cantar, dançar, passear, 
+							nadar, viajar, olhar o céu, ver filmes e animes, ler bons livros e um monte de coisa.
+							</p>
+							<a href="https://www.linkedin.com/in/danieladuarteng" target="_blank">
+							<img  src="../../imagens/linkedin.png"  title="Linkedin" width="20px" 
+							height="20px" alt="Linkedin"/>
+						</a>
+				
+						<a href="https://www.facebook.com/danieladuarteng" target="_blank">
+								<img src="../../imagens/facebook.png"  title="Facebook" width="20px" height="20px" 
+								alt="Facebook" target="_blank"/>
+						</a>
+
+						<a href="https://www.instagram.com/danieladuarteng" target="_blank">
+								<img src="../../imagens/instagram.png"  title="Instagram" width="20px" height="20px" 
+								alt="Instagram"  target="_blank"/>
+						</a>								
+						</div>
+					</div>
+				</div>
+				
+			<div id="relacionado">
+				<h1><strong>Relacionado</strong></h1>
+				<div class="grid-relacionados">
+				
+					<div class="grid-relacionados-item">
+						<a href="7-dicas-para-conseguir-um-trabalho-em-tecnologia">
+							<img class="thumbnail-relacionados"src="../../imagens/homem-no-computador-e-escrevendo-com-cafe-e-planta-do-lado.jpg" 
+								alt="Homem no notebook e escrevendo num papel com café e planta do lado"/>
+							<h1>7 dicas para conseguir um trabalho em tecnologia</h1>
+						</a>
+						<div class="cabecalho">
+							<div class="box-4">
+								<a href="../tecnologia/">TECNOLOGIA</a>
+							</div>
+						</div>
+					</div>
+					
+					<div class="grid-relacionados-item">
+						<a href="htaccess-como-fazer-urls-amigaveis-sem-ponto-html-no-amazon-ec2">
+							<img class="thumbnail-relacionados" src="../../imagens/url.jpg" alt="Imagem da url http://www"/>
+							<h1>.HTACCESS - Como fazer URLs amigáveis (sem .html) no Amazon EC2</h1>
+						</a>
+						<div class="cabecalho">
+							<div class="box-4">
+								<a href="../tecnologia/">TECNOLOGIA</a>
+							</div>
+						</div>
+					</div>
+					
+					<div class="grid-relacionados-item-ultimo">
+						<a href="../ti-para-todos/a-importancia-de-ter-um-site-o-novo-curriculo-online"/>
+							<img class="thumbnail-relacionados" src="../../imagens/site.jpg" 
+							alt="Pessoa olhando tela do MacBook"/>
+							<h1>A importância de ter um site: o novo currículo online</h1>
+						</a>
+						<div class="cabecalho">
+							<div class="box-4">
+								<a href="../ti-para-todos/">TI PARA TODOS</a>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			<div id="disqus_thread"></div>
+			
+		</div>
+	</div>
+
+	<footer>
+		<div class="copy">
+		
+			<p>
+				<a href="mailto:falecom@danieladuarte.com.br">
+					falecom@danieladuarte.com.br
+				</a> 
+			
+			</p>
+		
+			<p> 
+				Feito com <img id="heart" src="../../imagens/coracao.png" title="Coração" width="20px" 
+				height="20px" alt="Coração"/> em São Paulo (SP)
+			</p>
+			
+			<h4>2012-2018</h4>
+			
+			<div class="social">
+				<a href="https://www.linkedin.com/in/danieladuarteng" target="_blank">
+							<img  src="../../imagens/linkedin.png"  title="Linkedin" width="20px" 
+							height="20px" alt="Linkedin"/>
+						</a>
+				
+						<a href="https://www.facebook.com/danieladuarteng" target="_blank">
+								<img src="../../imagens/facebook.png"  title="Facebook" width="20px" height="20px" 
+								alt="Facebook" target="_blank"/>
+						</a>
+
+						<a href="https://www.instagram.com/danieladuarteng" target="_blank">
+								<img src="../../imagens/instagram.png"  title="Instagram" width="20px" height="20px" 
+								alt="Instagram"  target="_blank"/>
+						</a>		
+			</div>
+		</div>
+	</footer>
+	
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108415697-1"></script>
+	
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-108415697-1');
+	</script>
+	
+	<!--DISQUS-->
+	<script>
+		/**
+		*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+		*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+		/*
+		var disqus_config = function () {
+		this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+		this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+		};
+		*/
+		(function() { // DON'T EDIT BELOW THIS LINE
+		var d = document, s = d.createElement('script');
+		s.src = 'https://danieladuarte.disqus.com/embed.js';
+		s.setAttribute('data-timestamp', +new Date());
+		(d.head || d.body).appendChild(s);
+		})();
+	</script>
+
+	<script src="../../libraries/jquery-2.2.4.min.js"></script>
+	<script src="../../javascript/javascript.js"></script>
+	
+	<!-- BOTOES DE COmpartilamentos do lado Go to www.addthis.com/dashboard to customize your tools -->
+	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ad8f76e29e44c14"></script>
+</body>
+</html>

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Como criar um espaço de comentários no seu Blog mesmo sem ser programador | Daniela Duarte - Desenvolvedora Front-End<</title>
+	
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width"/>
+	
+	<meta content="Aprenda a criar um espaço de comentários no seu blog com o DISQUS"
+	name="description"/>
+	
+	<link rel="stylesheet" href="../../css/style.css"/>
+	<link rel="shortcut icon" href="../../imagens/favoricon.png"/>
+	
+	<!-- CSS mainchimp-->
+	<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+	<style>
+					#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+					/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+					   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+	</style>
+
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"/>
+	<link href="https://fonts.googleapis.com/css?family=Alice|Oswald" rel="stylesheet"/>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet"/>
+	
+	
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108415697-1"></script>
+	
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-108415697-1');
+	</script>
+	
+	<!--DISQUS-->
+	<script>
+		/**
+		*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+		*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+		/*
+		var disqus_config = function () {
+		this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+		this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+		};
+		*/
+		(function() { // DON'T EDIT BELOW THIS LINE
+		var d = document, s = d.createElement('script');
+		s.src = 'https://danieladuarte.disqus.com/embed.js';
+		s.setAttribute('data-timestamp', +new Date());
+		(d.head || d.body).appendChild(s);
+		})();
+	</script>
+
+	<script src="../../libraries/jquery-2.2.4.min.js"></script>
+	<script src="../../javascript/javascript.js"></script>
+	
+</head>
+
+<body>
+
+	<nav>
+		<div id="pagina">
+			<div class="barra-menu">
+				<div class="btn-menu alinhamento">
+					
+					<a href="../../" >
+						<img src="../../imagens/logotipo.png" alt="logomarca" title="logomarca"/>
+					</a>
+					
+					<a href="#" id="btn-drop" >
+						<input type="checkbox" id="menu-simbolo">
+						<label for="menu-simbolo">&#9776;</label>
+					</a>
+					
+				</div>	
+				<ul id="submenu" class="lista-menu alinhamento">
+						<li><a href="../../">Início</a></li>
+						<li><a href="../../servicos">Serviços</a></li>
+						<li><a href="../../sobre-mim">Sobre mim</a></li>
+						<li><a href="../">Blog</a></li>
+						<li><a href="../../fale-comigo">Fale comigo</a></li>
+					</ul>
+			</div>
+		</div>
+	</nav>
+	
+	<div class="foto-blog">
+		<img src="../../imagens/logo-disqus.jpg"/>
+			<div class="legenda-capa">
+				<a href="https://disqus.com/" target="_blank">
+						DISQUS
+					</a>
+			</div>					
+	</div>
+	
+	
+							
+		
+	<div class="estrutura-blog">
+		<div class="conteudo-blog">
+		<h1>Como criar um espaço de comentários no seu Blog mesmo sem ser programador</h1>
+			<div class="cabecalho">
+				<div class="box-1"><a href="../ti-para-todos/">TI PARA TODOS</a></div>
+				<div class="box-2"><a href="../../sobre-mim">Daniela Duarte</a></div>
+				<div class="box-3">30 de janeiro de 2018</div>
+			</div>
+			<p>Já percebeu que agora quase todos os Blogs, utilizam esse sistema de comentários:</p>
+			
+			<div class="imagem-blog">
+				<img class="imagem-class" src="../../imagens/sistema-de-comentarios.jpg"/>
+			</div>
+			
+			<p>Ele é um plugin que veio para facilitar a vida, 
+			você pode logar com seu Facebook, Twitter, Google 
+			ou pelo login do Disqus, e comentar na hora 
+			e ainda pode receber as respostas e outros 
+			comentários do post por e-mail.</p>
+			
+			<p>Hoje vou ensinar como colocar esse espaço de comentários no seu blog</p>
+			
+			<h2>Configurando o DISQUS no seu Blog</h2>
+			
+			<p>1.	Vamos entrar no site: https://disqus.com/</p>
+			<p>2.	Na página inicial, clique em GET STARTED
+			</p>
+			
+			<div class="imagem-blog">
+			<img class="imagem-class" src="../../imagens/pagina-inicial-disqus.jpg"/>
+			</div>
+			
+			<p>3.	É solicitada a criação de um login, você pode logar através das suas redes sociais também:</p><br>
+			
+			<div class="imagem-blog">
+			<img class="imagem-class"" src="../../imagens/login-disqus.jpg"/>
+			</div>
+			
+			<p>4.	Você é redirecionado para página inicial, agora logado. Novamente clique em GET STARTED
+			</p>
+			
+			<div class="imagem-blog">
+			<img class="imagem-class" src="../../imagens/pagina-inicial-disqus.jpg"/>
+			</div>
+			
+			<p>5.	É questionado o que você quer fazer, são dadas as opções:</p>
+			<p>	
+				<div class="lista-com-letra-maiuscula">
+					<ol type="A">
+						<li>Criar conta para comentar nos sites</li>
+						<li>Instalar Disqus no site</li>
+					</ol>
+				</div>
+			</p>
+			
+			<p>	 Clique em na opção B 
+			</p>
+			
+			<div class="imagem-blog">
+			<img class="imagem-class" src="../../imagens/escolha-comentar-ou-instalar.jpg"/>
+			</div>
+			
+			<p>6.	É solicitado:</p>
+			<p>	
+			<div class="lista-com-letra-maiuscula">
+				<ol type="A">
+					<li>Que coloque o nome do seu site, 
+					não precisa colocar WWW nem o .com.br, 
+					no meu caso ao invés de colocar: 
+					www.danieladuarte.com.br, só coloquei danieladuarte</li>
+					<li>Colocar a categoria do seu site, 
+					o meu é de tecnologia por isso coloquei Tech</li>
+					<li>Idioma coloquei em português</li>
+				</ol>
+			</div>
+			</p>
+			
+			
+			<p>Após preenchimento dos campos, clique em CREATE SITE
+			</p>
+			
+			<div class="imagem-blog">
+			<img class="imagem-class" src="../../imagens/criacao-do-site-disqus.jpg"/>
+			</div>
+			
+			<p>7.	Você seleciona o plano que quer usar, 
+			vale a pena analisar qual se encaixa melhor no 
+			seu blog, no meu caso eu uso o Basic</p>
+			
+			<div class="imagem-blog">
+			<img class="imagem-class" src="../../imagens/selecao-do-plano-disqus.jpg"/>
+			</div>
+			<p>8.	É solicitado que você escolha a plataforma que seu blog 
+			esta hospedado, em cada uma eles oferecem um passo a passo 
+			para você configurar o Disqus no seu blog. 
+			(Se sua plataforma estiver listada, siga o passo a passo do site e pule para o item 14 desse tutorial)
+			</p>
+			
+			<div class="imagem-blog">
+			<img class="imagem-class"" src="../../imagens/selecao-da-plataforma-do-site.jpg"/>
+			</div>
+			<p>9.	Caso a plataforma que seu blog está hospedado, não esteja listada, 
+			logo abaixo é exibida a opção: <em>I don’t see my platform listed, 
+			install manually with Universal Code</em>. Como meu site não está hospedado 
+			em nenhuma dessas opções, vou usar a opção universal
+			</p>		
+			
+			<div class="imagem-blog">
+			<img class="imagem-class"" src="../../imagens/plataforma-nao-listada.jpg"/>
+			</div>
+			<p>10.	A primeira linha do código (destacada em amarelo), 
+			deverá ser copiada e inserida no local onde você quer que apareça os comentários
+			</p>		
+			
+			<div class="imagem-blog">
+			<img class="imagem-class"" src="../../imagens/colocar-essa-parte-onde-quer-que-apareca-os-comentarios.jpg"/>
+			</div>
+			<p>11.	No meu caso, eu insiro abaixo de cada post do blog:
+			</p>		
+			
+			<div class="imagem-blog">
+			<img class="imagem-class"" src="../../imagens/codigo-inserir-div-comentarios.jpg"/>
+			</div>
+			<p>12.	Agora copie o resto do código:
+			</p>		
+			
+			<div class="imagem-blog">
+			<img class="imagem-class"" src="../../imagens/resto-do-codigo.jpg"/>
+			</div>
+			<p>13.	E cole antes do fechamento do head do arquivo do seu post:
+			</p>		
+			
+			<div class="imagem-blog">
+			<img class="imagem-class"" src="../../imagens/codigo-antes-do-fechamento-do-head.jpg"/>
+			</div>
+			<p>14.	Pronto, agora seus posts aparecerão assim:
+			</p>		
+			
+			<div class="imagem-blog">
+			<img class="imagem-class"" src="../../imagens/exemplo-de-comentario.jpg"/>
+			</div>
+			
+			<h2>Bônus</h2>
+			<h2>1. Comentar como moderador</h2>
+			<p>Para comentar como moderador do site é só logar com sua conta Disqus ou como no meu caso no Facebook.
+			</p>		
+			
+			<div class="imagem-blog">
+			<img class="imagem-class" src="../../imagens/comentario-moderador.jpg"/>
+			</div>
+			<h2>2. Seguir seus leitores</h2>
+			<p>Clicando no perfil da pessoa, é possível acompanhar o leitor e também eles podem te acompanhar,
+			caso queira que isso fique privado, existe uma opção na parte de configurações.
+			</p>		
+			
+			<div class="imagem-blog">
+			<img class="imagem-class" src="../../imagens/perfil-disqus.jpg"/>
+			</div>
+			<h2>3. Acompanhar notificações</h2>
+			<p>A. Na parte Administrativa do Disqus, acessando Notifications > Settings
+			</p>		
+			
+			<div class="imagem-blog">
+			<img class="imagem-class" src="../../imagens/notificacoes.jpg"/>
+			</div>
+			<p>B. É exibida a tela Web Notifications onde é possível configurar as notificações de comentários
+			</p>		
+			
+			<div class="imagem-blog">
+			<img class="imagem-class" src="../../imagens/configurar-notificacoes.jpg"/>
+			</div>
+			<p>C. E em Email Notifications é possível optar por as iterações serem enviadas por e-mail
+			</p>		
+			
+			<div class="imagem-blog">
+			<img class="imagem-class" src="../../imagens/email-notificacoes.jpg"/>
+			</div>
+			
+	
+			
+			
+			<br><br>
+			<br><br>
+		
+			<p>...</p>
+			<p>O que achou desse post? Quer ver mais conteúdos parecidos com esse?
+			Sabia configurar o DISQUS no seu site? Deixe seu comentário e se ficou alguma dúvida só postar nos comentários ;)</p>
+
+		
+		
+			<br><br>
+			
+			<p>...</p>
+			<p><em>Transparência: Prints retirados do site: <a href="https://disqus.com/" target="_blank">DISQUS</a> e do desse site.
+			
+
+			
+			<div id="compartilhe">
+			<h1>Compartilhe</h1>
+			<!-- Go to www.addthis.com/dashboard to customize your tools -->
+            <div class="addthis_inline_share_toolbox"></div>
+			</div>
+			
+			<div class="newsletter-post">
+					<div class="formulario">
+						<form action="https://danieladuarte.us17.list-manage.com/subscribe/post?u=99d5a979cddef03e25e111bb4&amp;id=b9fbd70afe" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+							
+							<h1>Gostou do post?</h1>
+							<label for="mce-EMAIL"><p>Cadastre-se para receber gratuitamente novidades e publicações do blog por e-mail</p></label>
+							<input type="email" value="" name="EMAIL" placeholder="Coloque seu melhor e-mail" required>
+							<input type="submit" value="CADASTRAR" name="subscribe" class="botaoEnviar-post">
+							
+						</form>
+					</div>
+			</div>
+		
+			
+					<div id="relacionado">
+				<h1><strong>Relacionado</strong></h1>
+				<div class="grid-relacionados">
+			
+					<div class="grid-relacionados-item">
+						<a href="../mulheres-ti/4-inspiracoes-femininas-de-brasileiras-na-area-de-tecnologia">
+							<img class="thumbnail-relacionados"src="../../imagens/mulher-com-oculos-de-realidade-virtual.jpg"/>
+							<h1>4 inspirações femininas de Brasileiras na área de Tecnologia</h1>
+						</a>
+						<div class="cabecalho">
+							<div class="box-4">
+								<a href="../mulheres-ti/">MULHERES TI</a>
+							</div>
+						</div>
+					</div>
+				
+					<div class="grid-relacionados-item">
+						<a href="../ti-para-todos/como-criar-um-espaco-de-comentarios-no-seu-blog-mesmo-sem-ser-programador">
+							<img class="thumbnail-relacionados" src="../../imagens/disqus-logo-blue.svg"/>
+							<h1>Como criar um espaço de comentários no seu Blog mesmo sem ser programador</h1>
+						</a>
+						<div class="cabecalho">
+							<div class="box-4">
+								<a href="../ti-para-todos/">TI PARA TODOS</a>
+							</div>
+						</div>
+					</div>
+				
+					<div class="grid-relacionados-item-ultimo">
+						<a href="../tecnologia/htaccess-como-fazer-urls-amigaveis-sem-ponto-html-no-amazon-ec2"/>
+							<img class="thumbnail-relacionados" src="../../imagens/url.jpg" alt="Imagem da url http://www"/>
+							<h1>.HTACCESS - Como fazer URLs amigáveis (sem .html) no Amazon EC2</h1>
+						</a>
+						<div class="cabecalho">
+							<div class="box-4">
+								<a href="../tecnologia/">TECNOLOGIA</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			
+			<div id="disqus_thread"></div>
+		</div>
+	</div>
+
+	<footer>
+		<div class="copy">
+		
+			<p>
+				<a href="mailto:falecom@danieladuarte.com.br">
+					falecom@danieladuarte.com.br
+				</a> 
+			
+			</p>
+		
+			<p> 
+				Feito com <img id="heart" src="../../imagens/coracao.png" title="Coração" width="20px" 
+				height="20px" alt="Coração"/> em São Paulo (SP)
+			</p>
+			
+			<h4>2012-2018</h4>
+			
+			<div class="social">
+				<a href="https://www.linkedin.com/in/danieladuarteng" target="_blank">
+					<img  src="../../imagens/linkedin.png"  title="Linkedin" width="20px" 
+					height="20px" alt="Linkedin"/>
+				</a>
+			</div>
+		</div>
+	</footer>
+	
+	<!-- BOTOES DE COmpartilamentos do lado Go to www.addthis.com/dashboard to customize your tools -->
+	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ad8f76e29e44c14"></script>
+</body>
+</html>

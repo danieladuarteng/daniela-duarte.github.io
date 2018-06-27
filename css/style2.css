@@ -1,0 +1,447 @@
+*{
+	font-family: Arial, sans-serif;/*Sempre ter mais de uma fonte caso a primeira não esteja instalada no pc do usuario*/
+	margin:0;
+	padding:0;
+}
+p{
+	font-family: 'Alice', serif;
+	font-size: 18px;
+	line-height: 1.5em; /*espaçamento de linha*/
+}
+
+h2{
+	font-family: 'Oswald', sans-serif;
+	color: #ff0de7;
+	text-transform: uppercase;
+}
+
+a{
+	font-weight: bold;
+	text-decoration: none;
+	
+}
+
+
+
+
+
+/* ------- MENU ------ */
+/* Clearfix */
+ .clearfix:before, .clearfix:after {
+    content:" ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+
+.barra-menu {
+    width: 100%;
+    overflow: hidden;
+	background-color:#000;
+	position: fixed;
+	z-index:99;
+}
+
+.lista-menu li {
+    display: inline-block;
+    float: none;
+    width: 15%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+	background-color:#000;
+}
+.lista-menu li:last-child {
+    border-right: none;
+}
+.lista-menu a, .btn-menu {
+    display: block;
+    width: 100%;
+    height: 3em;
+    line-height: 3em;
+	color:#fff;
+	
+}
+.btn-menu {
+    display: none;
+}
+}
+
+ .aln-izquierda {
+    text-align: left;
+}
+.aln-centro {
+    text-align: center;
+}
+.aln-derecha {
+    text-align: right;
+}
+
+.lista-menu a, .btn-menu {
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+}
+.lista-menu a:hover {
+    background-color: #ff0de7;
+	
+	
+}
+
+ @media screen and (max-width:480px) {
+    #pagina {
+        width: 100%;
+    }
+    .btn-menu {
+        display: block;
+        background-color: #ff0de7;
+    }
+    #submenu {
+        display: none;
+    }
+    .lista-menu li {
+        display: block;
+        float: none;
+        width: 100%;
+        
+    }
+}
+
+.container{
+	margin: 0 auto;/*top e botton=0 right e left=auto*/
+	max-width: 940px;
+	padding: 0 20px;/*top e botton=0 right e left=10px*/
+
+}
+
+.container img{
+	width:100%;
+	max-width:200px;
+}
+.main{
+	background-color: #fff;
+}
+
+.main .receber{
+	padding: 0 30px;/*top e botton=0 right e left=10px*/
+}
+
+.main p{
+	float: left;
+	margin: auto;/*top right bottom left*/
+	width:100%;
+	max-width:400px;
+}
+.main .container{
+	margin: 80px auto;
+}
+
+
+.container2 img{
+	border-radius: 100%;
+	border-style: double;
+	
+}
+
+
+
+
+/*Daniela*/
+
+.home{
+	background-color:#410080;
+	background-size: cover;
+	height: 100vh;
+	text-align: center;
+	color:#fff;
+	border: solid 1px #410080;
+	position: relative;
+
+	
+}
+
+.logo{
+	margin: 182px -55px;
+	width: 877px;
+	height: 250px;
+
+	
+	min-width: 200px;
+	
+	}
+	
+	@media only screen and (max-width: 320px)
+	{
+		.logo{
+			margin: 231px -467px;
+			width: 100%;
+		}
+	}
+	
+	@media only screen and (min-width: 321px) and (max-width: 480px)
+	{
+		.logo{
+			margin: 231px -467px;
+			width: 100%;
+		}
+	}
+	
+	@media only screen and (min-width: 481px) and (max-width: 600px)
+	{
+		.logo{
+			margin: 231px -386px;
+			width: 100%;
+		}
+	}
+	@media only screen and (min-width: 601px) and (max-width: 768px)
+	{
+		.logo{
+			margin: 231px -298px;
+			width: 100%;
+		}
+	}
+	
+	@media only screen and (min-width: 769px) and (max-width: 1024px)
+	{
+		.logo{
+			margin: 231px -186px;
+			width: 100%;
+		}
+	}
+	
+	@media only screen and (min-width: 1025px) and (max-width: 1200px)
+	{
+		.logo{
+			margin: 231px -110px;
+			width: 100%;
+		}
+	}
+	
+	@media only screen and (min-width: 1201px) and (max-width: 1680px)
+	{
+		.logo{
+			margin: 231px -20px;
+			width: 100%;
+		}
+	}
+	
+	
+	
+
+.letra {
+	margin: 16px auto -99px 515px;
+	min-width: 134px;
+	max-width: 134px;
+	
+	max-height: 120px;
+	border-style: solid;
+	border-color: #fff;
+	padding: 0 3px;/*top e botton=0 right e left=10px*/
+	background-color: #ff0de7;
+	text-align:center;
+	font-size:102px;
+	font-family: Arial;
+	
+	
+}
+
+.nome {
+	margin: -135px auto 15px 663px;
+	max-width: 940px;
+	text-align:left;
+	width: 157px;
+	font-size:81px;
+	font-family: Arial;
+
+}
+
+.sobrenome {
+	margin: -48px auto auto 663px;
+	max-width: 940px;
+	text-align:left;
+	width: 157px;
+	font-size:81px;
+	font-family: Arial;
+	
+}
+
+.titulo{
+	
+	color:#fff;
+	margin: 11px auto auto 663px;
+	max-width: 940px;
+	text-align:left;
+	width: 157px;
+	font-size:23px;
+	font-family: Arial;
+	
+}
+
+/*.header{
+	background: url("../_imagens/logo-rosa.png") no-repeat center center;/*fonte: http://www.santodigital.com.br/o-que-e-computacao-em-nuvem-que-beneficios-traz-para-educacao/*/
+	/*dbackground-size: cover;/*deixa em todo o espaço da tela*/
+	/*height: 100vh;
+	text-align:left;
+	position: relative;
+	top: 0;
+	left:0;
+}
+
+.header h1{
+	color:#fff;
+	line-height: 100px;/*espaçamento de 100px por linha*/
+	/*font-size:80px;
+	margin-top:0;
+	margin-bottom:80px;	
+}*/
+
+/*Meus serviços*/
+
+.grid{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.grid-item{
+  margin:20px;
+  width: 400px;
+  text-align:center;
+}
+
+
+@media (min-width: 850px){
+	.header h1{
+		font-size: 120px;
+	}
+}
+
+@media (min-width: 850px){
+	.blog  .header h1{
+		font-size: 120px;
+	}
+}
+
+
+
+
+.btn{
+	color:#fff;
+	background:#000;
+	padding: 5px 40px;/*top e botton=10px right e left=40px*/
+	text-decoration:none;
+	transition: background .5s;
+}
+
+.btn:hover, .nav ul li:hover{/*quando clicado*/
+	background: #ff0de7;
+	cursor:pointer;
+	transition: background .5s;
+}
+
+
+
+.receber{
+	background: url("../_imagens/sao-paulo.jpg");
+	background-size: cover;
+	height:600px;
+}
+
+.receber .container{
+	position:relative;
+	top:220px;
+}
+
+.receber h2{
+	color:#fff;
+	text-align:left;
+}
+
+.receber p{
+	color:#fff;
+	text-align: left;
+}
+
+.receber .btn{
+	margin: 10px 0 0;
+	float:left;
+}
+
+.footer{
+	background:#000;
+	height: 10px;
+	padding-bottom: 50px;
+}
+
+.footer p{
+	color:#fff;
+	font-size: 14px;
+	height: 5px;
+	line-height: 60px;
+	margin:0;
+}
+
+
+
+
+
+
+
+
+.blog h2{
+	color: #e4bb97;
+	background-color: #aa8eb5;
+	font-family: 'Raleway', sans-serif;
+	font-size: 28px;
+	font-weight: 500;
+	text-align: left;
+	text-transform: uppercase;
+}
+
+.blog ul{
+	margin: 0 auto;
+	padding: 0;
+	width:50%;
+}
+
+
+.blog li{
+	border-bottom: 1px solid #e4bb97;
+	list-style: none;
+	margin: 100px 0px;
+	padding-bottom: 60px;
+}
+
+.blog p{
+	color: #444;
+	line-height: 32px;
+	font-family: sans-serif;
+	font-size: 20px;
+	font-weight:100;
+	position:relative;
+	margin: 0px 0px  auto 300px;/*top e botton right e left*/
+
+}
+
+.blog a{
+	color:#214e34;
+	font-family: 'Raleway', sans-serif;
+	font-size: 13px;
+	font-weight: 900;
+	text-align:left;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing:2px;
+	margin: 150px 0px  auto 300px;/*top e botton right e left*/
+}
+
+.blog img{
+	float: left;
+	margin: 10px 80px 50px 0;/*top right bottom left*/
+}
+
