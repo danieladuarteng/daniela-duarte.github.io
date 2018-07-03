@@ -10,7 +10,7 @@ Maybe you want to read about them:
 - [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 - [Jquery](https://jquery.com/)
 
-The following items only work if the site is on a hosting server: MailChimp and Diqus
+The following items only work if the site is on a hosting server: MailChimp, Diqus and AddThis
 
 The .htaccess file works to remove the .html of url 
 
