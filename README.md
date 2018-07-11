@@ -1,3 +1,4 @@
+![GitHub Logo](imagens/screenshot-site-no-mobile.png)
 # Daniela Duarte - Website V.2
 
 [Access the website](http://www.danieladuarte.com.br/)
