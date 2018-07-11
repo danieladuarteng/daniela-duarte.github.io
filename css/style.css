@@ -981,19 +981,20 @@
 		margin-top: 20px;
 	}
 
-	.botaoEnviar-post {
-    -webkit-border-radius: 10px;
-    background: #ff0080;
-    border-color: #ff0080;
-    padding: 15px;
-    display: inline-block;
-    border: 1px solid;
-    cursor: pointer;
-    color: #fff;
-    font-family: Arial,"Alice", serif;
-    font-size: 1.2rem;
-    line-height: 1.5rem;
-}
+	.botaoEnviar-post 
+	{
+		-webkit-border-radius: 10px;
+		background: #ff0080;
+		border-color: #ff0080;
+		padding: 15px;
+		display: inline-block;
+		border: 1px solid;
+		cursor: pointer;
+		color: #fff;
+		font-family: Arial,"Alice", serif;
+		font-size: 1.2rem;
+		line-height: 1.5rem;
+	}
 
 	/*tablet*/
 	@media only screen and (min-width: 481px) and (max-width: 768px)
@@ -1538,14 +1539,10 @@
 
 	.sobre
 	{
-		    margin: 0px auto 50px auto;
-    /* max-width: 940px; */
-    padding: 0px 100px;
-}
+		margin: 0px auto 50px auto;
+		/* max-width: 940px; */
+		padding: 0px 100px;
 	}
-
-	
-
 
 	.principal
 	{
@@ -1701,12 +1698,12 @@
 	{
 		.falecomigo-conteudo{margin:-23px auto 0 auto;}
 	}
+	
 	.falecomigo-conteudo p{margin-bottom:20px;}
 
 	.falecomigo-conteudo ul,ol{margin-left: 20px;}
 	
 	
-
 	.conteudo-blog
 	{
 		margin: 40px auto;/*top e botton=0 right e left=auto*/
@@ -1730,6 +1727,7 @@
 		max-width: 996px;
 		padding: 108px 20px 0 20px;
 	}
+	
 	/*tablet*/
 	@media only screen and (min-width: 481px) and (max-width: 768px)
 	{
@@ -1752,9 +1750,6 @@
 	.grid-conteudo-blog p{margin-bottom:20px;}
 
 	.grid-conteudo-blog ul,ol{margin-left: 20px;}
-
-	
-	
 
 	.foto-blog img
 	{
@@ -1970,8 +1965,8 @@
 		margin: 0 0 20px 0;
 	}
 	
-	.grid-autor-item-ultimo a:link, .grid-autor-item-ultimo a:visited
-	{ color: #ff0de7;}
+	.grid-autor-item-ultimo a:link, .grid-autor-item-ultimo a:visited {color: #ff0de7;}
+	
 	#blog h1{ text-align:center;}
 	
 	.grid-blog,.grid-relacionados,.grid-autor
@@ -2001,7 +1996,6 @@
 			max-height: 500px;
 			height: 100%;
 			position: relative;
-
 		}
 
 	}
@@ -2016,7 +2010,6 @@
 			max-height: 500px;
 			height: 100%;
 			position: relative;
-
 		}
 
 	}
@@ -2136,16 +2129,12 @@
 			margin: 0;
 		}
 	}
-
-	
-	
    
    .thumbnail-blog
 	{
-
-    width: 293px;
-    height: 188px;
-    position: relative;
+		width: 293px;
+		height: 188px;
+		position: relative;
 	}
 
 	/*tablet*/
@@ -2182,10 +2171,9 @@
 
 	.thumbnail-relacionados
 	{
-
-    width: 293px;
-    height: 188px;
-    position: relative;
+		width: 293px;
+		height: 188px;
+		position: relative;
 	}
 
 	/*tablet*/
@@ -2221,14 +2209,14 @@
 
 	.box-4
 	{
-    padding: 2px;
-    margin: 2px;
-    text-align: center;
-    font-size: inherit;
-	border: 1px solid #ff0080;
+		padding: 2px;
+		margin: 2px;
+		text-align: center;
+		font-size: inherit;
+		border: 1px solid #ff0080;
 		color:#fff;
 		background-color:#ff0080;
-}
+	}
 
 /*MENU*/
 

@@ -4,7 +4,7 @@
 	<title>Às vezes fazer algo sozinho é a melhor opção | Daniela Duarte - Desenvolvedora Front-End</title>
 	
 	<meta charset="UTF-8"/>
-	<meta name="viewport" content="width=device-width"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
 	<meta content="Nesse último dia útil do ano, deixo uma lição que aprendi nesse ano: tudo na vida tem um propósito, 
 	por mais que você não entenda na hora. Saiba mais no novo post do BLOG."
@@ -20,13 +20,41 @@
 					/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
 					   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
 	</style>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108415697-1"></script>
+	
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
 
-	<link href="https://fonts.googleapis.com/css?family=Raleway"  rel="stylesheet"/>
-	<link href="https://fonts.googleapis.com/css?family=Alice|Oswald" rel="stylesheet"/>
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet"/>
+	  gtag('config', 'UA-108415697-1');
+	</script>
 	
+	<!--DISQUS-->
+	<script async>
+		/**
+		*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+		*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+		/*
+		var disqus_config = function () {
+		this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+		this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+		};
+		*/
+		(function() { // DON'T EDIT BELOW THIS LINE
+		var d = document, s = d.createElement('script');
+		s.src = 'https://danieladuarte.disqus.com/embed.js';
+		s.setAttribute('data-timestamp', +new Date());
+		(d.head || d.body).appendChild(s);
+		})();
+	</script>
+
+	<script defer src="../../libraries/jquery-2.2.4.min.js"></script>s
+	<script defer src="../../javascript/javascript.js"></script>
 	
-	
+	<!-- BOTOES DE COmpartilhamentos do lado Go to www.addthis.com/dashboard to customize your tools -->
+	<script async src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ad8f76e29e44c14"></script>
 </head>
 
 <body>
@@ -458,41 +486,5 @@
 			</div>
 		</div>
 	</footer>
-	
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108415697-1"></script>
-	
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-
-	  gtag('config', 'UA-108415697-1');
-	</script>
-	
-	<!--DISQUS-->
-	<script>
-		/**
-		*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-		*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-		/*
-		var disqus_config = function () {
-		this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-		this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-		};
-		*/
-		(function() { // DON'T EDIT BELOW THIS LINE
-		var d = document, s = d.createElement('script');
-		s.src = 'https://danieladuarte.disqus.com/embed.js';
-		s.setAttribute('data-timestamp', +new Date());
-		(d.head || d.body).appendChild(s);
-		})();
-	</script>
-
-	<script src="../../libraries/jquery-2.2.4.min.js"></script>
-	<script src="../../javascript/javascript.js"></script>
-	
-	<!-- BOTOES DE COmpartilamentos do lado Go to www.addthis.com/dashboard to customize your tools -->
-	<script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ad8f76e29e44c14"></script>
 </body>
 </html>

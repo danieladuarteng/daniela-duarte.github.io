@@ -5,7 +5,8 @@
 	<title>Daniela Duarte - Desenvolvedora Front-End Freelancer</title>
 	
 	<meta charset="UTF-8"/>
-	<meta name="viewport" content="width=device-width"/>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
 	<meta content="Olá! Me chamo Daniela Duarte, sou desenvolvedora front-end freelancer
 	Especialista em criação de sites/websites, landing pages e hotsites. 
@@ -23,6 +24,22 @@
 					   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
 	</style>
 	
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<!-- aqui os scripts serão executados junto com o html-->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108415697-1"></script>
+	
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-108415697-1');
+	</script>
+	
+	<!--aqui os scrips serão executados na ordem-->
+	<script defer src="libraries/jquery-2.2.4.min.js"></script>
+	<script defer src="javascript/javascript.js"></script>
+	
 </head>
 
 <body>
@@ -30,26 +47,24 @@
 	<nav>
 		<div id="pagina">
 			<div class="barra-menu">
+			
 				<div class="btn-menu alinhamento">
-					
 					<a href="/" >
 						<img src="imagens/logotipo.png" alt="logomarca" title="logomarca"/>
 					</a>
-					
 					<a href="#" id="btn-drop" >
 						<input type="checkbox" id="menu-simbolo">
 						<label for="menu-simbolo">&#9776;</label>
 					</a>
-					
 				</div>
 				
-					<ul id="submenu" class="lista-menu alinhamento">
-						<li><a href="/">Início</a></li>
-						<li><a href="servicos">Serviços</a></li>
-						<li><a href="sobre-mim">Sobre mim</a></li>
-						<li><a href="blog">Blog</a></li>
-						<li><a href="fale-comigo">Fale comigo</a></li>
-					</ul>
+				<ul id="submenu" class="lista-menu alinhamento">
+					<li><a href="/">Início</a></li>
+					<li><a href="servicos">Serviços</a></li>
+					<li><a href="sobre-mim">Sobre mim</a></li>
+					<li><a href="blog">Blog</a></li>
+					<li><a href="fale-comigo">Fale comigo</a></li>
+				</ul>
 					
 			</div>
 		</div>
@@ -92,7 +107,8 @@
 						Tecnologia é só coisa de homem?
 					 </p>
 					 <img src="imagens/notebook-e-sapato-rosa-na-mesa.png" 
-					  alt="Sapato rosa em cima do notebook encima da mesa do computador e com impressora  e arduino ao lado"/>
+					  alt="Sapato rosa em cima do notebook encima da mesa do computador e com 
+					  impressora  e arduino ao lado"/>
 				</a>
 			</div>
 				
@@ -267,7 +283,8 @@
 				alt="Mãos formando a palavra love"/>
 				
 				<div class="legenda">
-					<a href="https://pixabay.com/pt/pessoas-amigos-grupo-m%C3%A3os-sinais-2608145/" target="_blank">
+					<a href="https://pixabay.com/pt/pessoas-amigos-grupo-m%C3%A3os-sinais-2608145/" 
+					target="_blank">
 						StockSnap do Pixabay
 				</a>
 				</div>
@@ -278,7 +295,8 @@
 					</p>
 			
 					<p>
-					Muitas vezes o meio que você frequenta impossibilitaria a oportunidade de conhecer determinadas pessoas...
+					Muitas vezes o meio que você frequenta impossibilitaria a oportunidade de 
+					conhecer determinadas pessoas...
 					</p>
 				</div>
 				
@@ -349,7 +367,8 @@
 				
 				<div class="conteudo-post">
 					<p>
-					Hoje vou falar de 10 aplicativos que me ajudam diariamente e que também podem ser bem úteis para você...
+					Hoje vou falar de 10 aplicativos que me ajudam diariamente e que também podem 
+					ser bem úteis para você...
 					</p>
 				</div>
 				
@@ -390,35 +409,35 @@
 				
 			<div class="atualizacoes">
 				<h1>Últimas atualizações</h1>
-					<ul>
-						<li>
-							<a href="blog/ti-para-todos/como-foi-o-meetup-front-end-study-1">
-							Como foi o Meetup Front-End Study #1
-							</a>
-						</li>
-						<li>
-							<a href="blog/ti-para-todos/como-foi-minha-primeira-vez-em-um-hackathon">
-								Como foi minha primeira vez em um Hackathon
-							</a>
-						</li>
-						<li>
-							<a href="blog/aprendizados/relacionamento-no-mundo-real-tambem-e-essencial">
-								Relacionamento no mundo real também é essencial
-							</a>
-						</li>
-					</ul>
+				<ul>
+					<li>
+						<a href="blog/ti-para-todos/como-foi-o-meetup-front-end-study-1">
+						Como foi o Meetup Front-End Study #1
+						</a>
+					</li>
+					<li>
+						<a href="blog/ti-para-todos/como-foi-minha-primeira-vez-em-um-hackathon">
+						Como foi minha primeira vez em um Hackathon
+						</a>
+					</li>
+					<li>
+						<a href="blog/aprendizados/relacionamento-no-mundo-real-tambem-e-essencial">
+						Relacionamento no mundo real também é essencial
+						</a>
+					</li>
+				</ul>
 			</div>
 				
 			<!-- Begin MailChimp Signup Form -->
 			<div class="newsletter">
 				<div class="formulario">
-					<form action="https://danieladuarte.us17.list-manage.com/subscribe/post?u=99d5a979cddef03e25e111bb4&amp;id=b9fbd70afe" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-							
+					<form action="https://danieladuarte.us17.list-manage.com/subscribe/post?u=99d5a979cddef03e25e111bb4&amp;id=b9fbd70afe" 
+						method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" 
+						class="validate" target="_blank" novalidate>	
 						<h1>Newsletter</h1>
 						<label for="mce-EMAIL"><p>Cadastre-se para receber novidades e publicações do blog por e-mail</p></label>
 						<input type="email" value="" name="EMAIL" placeholder="Coloque seu melhor e-mail" required>
-						<input type="submit" value="CADASTRAR" name="subscribe" class="botaoEnviar">
-							
+						<input type="submit" value="CADASTRAR" name="subscribe" class="botaoEnviar">	
 					</form>
 				</div>
 			</div>
@@ -463,19 +482,5 @@
 			
 		</div>
 	</footer>
-	
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108415697-1"></script>
-	
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-
-	  gtag('config', 'UA-108415697-1');
-	</script>
-
-	<script src="libraries/jquery-2.2.4.min.js"></script>
-	<script src="javascript/javascript.js"></script>
 </body>
 </html>
